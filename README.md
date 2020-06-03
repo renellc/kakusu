@@ -2,7 +2,7 @@
 Kakusu is a small toy project that allows you to hide a UTF-8 text file within an image.
 
 ## Requirements
-Rust 2018 is required for building the project. 
+Rust 2018+ is required for building the project. 
 
 ## Setup
 Clone this project, `cd` into the directory and type
