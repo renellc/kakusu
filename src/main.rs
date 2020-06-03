@@ -2,7 +2,7 @@ use clap::{Arg, App};
 use std::process;
 use std::fs;
 
-pub mod kakasu;
+pub mod kakusu;
 
 fn main() {
     let matches = App::new("Kakusu")
@@ -52,7 +52,7 @@ fn main() {
     };
 
     if matches.is_present("decode") {
-        match kakasu::decode_image(&image) {
+        match kakusu::decode_image(&image) {
             Ok(message) => {
                 println!("Secret message was:\n{}", message);
             }
@@ -79,7 +79,7 @@ fn main() {
             }
         };
 
-        match kakasu::encode_message(&mut msg_bytes, &image) {
+        match kakusu::encode_message(&mut msg_bytes, &image) {
             Ok(encoded_img) => {
                 match encoded_img.save("secret.png") {
                     Err(e) => {

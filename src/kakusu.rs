@@ -2,7 +2,6 @@ use image::{DynamicImage, GenericImageView, GenericImage, Rgba};
 use std::{fmt, error};
 use std::string::FromUtf8Error;
 
-#[allow(dead_code)]
 /// The number of bits that is used to represent a color field in an RGB pixel.
 const NUM_BITS: u8 = 8;
 
